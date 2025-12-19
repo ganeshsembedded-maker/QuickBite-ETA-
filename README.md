@@ -26,3 +26,8 @@ This project solves the problem using **Machine Learning-based ETA prediction**.
 ---
 
 ## 📂 Project Structure
+app/               - Flask application files  
+train.py           - Model training script  
+train.csv          - Dataset used for training  
+requirements.txt   - Project dependencies  
+README.md          - Project documentation
