@@ -1,4 +1,4 @@
-# QuickBite ETA Prediction 🚴‍♂️📦
+# QuickBite ETA Prediction 
 
 ## 📌 Project Overview
 QuickBite ETA Prediction is an **end-to-end Machine Learning project** that predicts **food delivery time (ETA)** based on various order and delivery parameters.  
