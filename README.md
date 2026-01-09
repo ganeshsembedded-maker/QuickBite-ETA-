@@ -1,81 +1,125 @@
-🍔 QuickBite ETA Prediction
-📌 Project Overview
+# 🍔 QuickBite ETA Prediction
 
-QuickBite ETA Prediction is an end-to-end Machine Learning project that predicts food delivery Estimated Time of Arrival (ETA) based on order, restaurant, and delivery-related parameters.
+## 📌 Project Overview
 
-The project simulates a real-world food delivery system (similar to Swiggy / Zomato) and demonstrates the complete ML lifecycle — from data preprocessing to model deployment using Flask.
-🎯 Problem Statement
+**QuickBite ETA Prediction** is an **end-to-end Machine Learning project** that predicts **food delivery time (ETA)** based on order, restaurant, and delivery-related parameters.
 
-Accurate food delivery time estimation is critical for:
+The project simulates a **real-world food delivery system** like **Swiggy or Zomato** and covers the complete ML lifecycle:
 
-Improving customer satisfaction
+* Data preprocessing
+* Feature engineering
+* Model training & evaluation
+* Model deployment using **Flask**
 
-Reducing order cancellations
+---
 
-Optimizing delivery operations
+## 🎯 Problem Statement
 
-Manual or rule-based ETA estimation often leads to inaccuracies.
-This project addresses the problem using a Machine Learning-based ETA prediction model.
-🧠 Solution Approach
+Accurately estimating food delivery time is critical for customer satisfaction in food delivery platforms.
 
-Perform Exploratory Data Analysis (EDA)
+Traditional/manual estimation methods are often inaccurate, leading to:
 
-Clean and preprocess the dataset
+* Poor user experience
+* Increased customer complaints
+* Reduced trust in the platform
 
-Train regression-based ML models
+This project solves the problem using a **Machine Learning-based ETA prediction system**.
 
-Evaluate model performance using appropriate metrics
+---
 
-Deploy the trained model using a Flask web application
+## 🧠 Technologies Used
 
-🛠️ Technologies Used
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Scikit-learn**
+* **Flask**
+* **Matplotlib / Seaborn**
 
-Python
+---
 
-Pandas
+## 📂 Project Structure
 
-NumPy
-
-Scikit-learn
-
-Flask
-
-📊 Machine Learning Model
-
-Problem Type: Regression
-
-Target Variable: Delivery Time (ETA)
-
-Evaluation Metrics:
-
-Mean Absolute Error (MAE)
-
-Root Mean Squared Error (RMSE)
-
-R² Score
-
-📂 Project Structure
-
+```
 QuickBite-ETA-Prediction/
 │
 ├── app/
-│   └── app.py            # Flask application
+│   ├── app.py              # Flask application
+│   ├── templates/          # HTML templates
+│   └── static/             # CSS / assets
 │
-├── train.py              # Model training script
-├── train.csv             # Training dataset
-├── requirements.txt      # Project dependencies
-├── README.md             # Project documentation
-📈 Future Improvements
+├── train.py                # Model training script
+├── train.csv               # Dataset used for training
+├── model.pkl               # Trained ML model
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+```
 
-Add real-time traffic and weather data
+---
 
-Use advanced models (XGBoost, Random Forest)
+## 📊 Dataset Description
 
-Deploy on cloud platforms (AWS / Render / Heroku)
+The dataset contains various features related to food delivery such as:
 
-Improve UI with frontend frameworks
+* Distance between restaurant and customer
+* Preparation time
+* Delivery partner availability
+* Traffic conditions
+* Weather conditions
 
-👨‍💻 Author
+**Target Variable:**
 
-Ganesh S
+* `Delivery_Time (ETA in minutes)`
+
+---
+
+## ⚙️ Model Building
+
+1. Data Cleaning & Preprocessing
+2. Feature Engineering
+3. Train-Test Split
+4. Model Training using **Scikit-learn**
+5. Model Evaluation using metrics like:
+
+   * Mean Absolute Error (MAE)
+   * Mean Squared Error (MSE)
+
+---
+
+## 🚀 Deployment (Flask App)
+
+The trained model is deployed using **Flask**, allowing users to input order details via a web interface and receive **predicted delivery time (ETA)**.
+---
+
+## 📈 Results
+
+* The model provides reliable ETA predictions
+* Helps improve delivery transparency
+* Enhances customer satisfaction
+
+---
+
+## 🔮 Future Improvements
+
+* Use advanced models (XGBoost, Random Forest)
+* Real-time traffic and weather API integration
+* Docker deployment
+* Cloud deployment (AWS / Azure)
+
+---
+
+## 👨‍💻 Author
+
+**Ganesh S**
 Aspiring Data Scientist | Machine Learning Enthusiast
+
+---
+
+## ⭐ Acknowledgements
+
+* Inspired by real-world food delivery platforms
+* Open-source Python community
+
+---
+
+> If you like this project, don’t forget to ⭐ the repository!
